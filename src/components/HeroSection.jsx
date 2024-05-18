@@ -21,14 +21,30 @@ const HeroSection = () => {
                 <img src={logo} alt="logo" />
               </div>
 
-              <ul className={`${data ? "navbarShow" : "navbarHide"} d-flex  align-items-center  gap-4 mobile_view `}>
-                <li><a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#">About Us</a></li>
-                <li><a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75  " href="#">Categories</a></li>
-                <li><a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#">Services</a></li>
-                <li><a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#">Testimonials</a></li>
-                <li><a className=' mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line' href="#">Blogs</a></li>
+              <div className={`${data ? "navbarShow" : "navbarHide"} d-flex  align-items-center  gap-4 mobile_view `}>
+                <a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#aboutus">About Us</a>
+                <div class="dropdown">
+                  <button class="dropbtn  mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75   text_gray text-center">
+                    Categories <span class="ms-1"><svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2931 1.29308C12.3853 1.19757 12.4957 1.12139 12.6177 1.06898C12.7397 1.01657 12.8709 0.988985 13.0037 0.987831C13.1365 0.986677 13.2681 1.01198 13.391 1.06226C13.5139 1.11254 13.6256 1.18679 13.7195 1.28069C13.8134 1.37458 13.8876 1.48623 13.9379 1.60913C13.9882 1.73202 14.0135 1.8637 14.0123 1.99648C14.0112 2.12926 13.9836 2.26048 13.9312 2.38249C13.8788 2.50449 13.8026 2.61483 13.7071 2.70708L7.70707 8.70708C7.52484 8.88934 7.27927 8.99421 7.0216 8.99979C6.76392 9.00538 6.51404 8.91127 6.32407 8.73708L0.324072 3.23708C0.128608 3.0578 0.0123704 2.8082 0.000930667 2.54321C-0.00473371 2.41201 0.0155007 2.28097 0.060479 2.15758C0.105457 2.03419 0.174299 1.92087 0.263072 1.82408C0.351846 1.7273 0.458813 1.64895 0.577867 1.5935C0.696921 1.53806 0.825729 1.5066 0.956939 1.50094C1.22193 1.4895 1.48061 1.58379 1.67607 1.76308L6.97007 6.61608L12.2931 1.29308Z"
+                        fill="#E6E6E6" />
+                    </svg>
+                    </span>
+                  </button>
+                  <div class="dropdown-content dropdown_bg">
+                    <a class=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75   text-center" href="#">
+                      Action </a>
+                    <a class=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75   text-center" href="#">
+                      Learn</a>
+                  </div>
+                </div>
+                <a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#services">Services</a>
+                <a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#testiomial">Testimonials</a>
+                <a className=' mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line' href="#blogs">Blogs</a>
 
-              </ul>
+              </div>
             </div>
 
             <div className=" d-flex align-items-center gap-2">
