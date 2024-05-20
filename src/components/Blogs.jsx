@@ -4,8 +4,8 @@ import date from '../assets/image/date.png'
 const Blogs = () => {
     return (
         <>
-            <section id='blogs' className=' black_background mt_-300 position-relative z-1 pb-5'>
-                <div className=" container mw_1140 pb-5 mb-5">
+            <section id='blogs' className=' black_background mt_-300 position-relative z-1 py-5'>
+                <div className=" container mw_1140 pt-lg-5 pb-5 mb-5">
                     <div data-aos="zoom-in" className=' d-flex justify-content-center pb-5'>
                         <h5 className=' mb-0 ff-Poppins fw-bolder fs-52 line-62 pb-3 color_emphasis text-center'>
                             EXPLORE OUR <span className=' fw-normal style_italic blog'>BLOGS</span>

@@ -136,7 +136,10 @@
   border-image: linear-gradient(to top, #6A1012, #D01F23) 1;
   transition: all 300ms linear;
 }
-
+.comn_btn:hover{
+  background: linear-gradient(280deg, #6A1012 0%, #D01F23 100%);
+  
+}
 .mw_745 {
   max-width: 745px;
 }
