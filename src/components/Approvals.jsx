@@ -6,7 +6,7 @@ const Approvals = () => {
     return (
         <>
             <section id='testiomial' className='  black_background position-relative overflow-hidden'>
-                <div className=' container mw_1140 py-5'>
+                <div className=' container py-5'>
                     <h3 className=' mb-0 ff-Poppins fs-52 fw-bolder line-62 color_emphasis '>
                         OEM <span className=' fw-normal style_italic Approvals'>APPROVALS</span>
                     </h3>

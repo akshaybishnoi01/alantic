@@ -8,39 +8,42 @@ import image_5 from '../assets/image/image_5.png'
 import image_6 from '../assets/image/image_6.png'
 import image_7 from '../assets/image/image_7.png'
 import Ellipse_4 from '../assets/image/Ellipse_4.png'
+import box_img from '../assets/image/box_img.png'
 const Aboutus = () => {
   return (
     <>
-      <section className='  black_background position-relative overflow-hidden'>
-        <div className=' d-lg-none d-flex overflow-x-scroll scroll_bar justify-content-center align-items-center gap-4 mt-5 pt-5'>
+      <section className='  black_background position-relative pt-5  pb-5'>
+        <div className=' d-lg-none d-flex  justify-content-center align-items-center gap-5 pt-5'>
           <div className=' pt-1'>
             <img src={image_1} alt="image_1" />
           </div>
           <div className=' pt-1'>
             <img src={image_2} alt="image_2" />
           </div>
+        </div>
+        <div className=' d-lg-none d-flex justify-content-center align-items-center gap-5 pt-5'>
+
           <div className=' pt-1'>
             <img src={image_3} alt="image_3" />
           </div>
-          <div className=' pt-1'>
+          <div className='pt-1'>
             <img src={image_4} alt="image_4" />
           </div>
+        </div>
+        <div className=' d-lg-none d-flex  justify-content-center align-items-center gap-5 pt-5 pb-5'>
           <div className=' pt-1'>
             <img src={image_5} alt="image_5" />
           </div>
           <div className=' pt-1'>
             <img src={image_6} alt="image_6" />
           </div>
-          <div className=' pt-1'>
-            <img src={image_7} alt="image_7" />
-          </div>
         </div>
         <div className='pt-1 d-lg-flex d-none'>
           <img className=' w-100' src={half_circle} alt="half_circle" />
 
         </div>
-        <div id='aboutus' className=" container mw_1140">
-          <div className=' mt_-300 box_img min-vh-100 pt-sm-0 pt-5 mt-sm-0 mt-5'>
+        <div id='aboutus' className=" container">
+          <div className=' mt_-300  min-vh-100 pt-sm-0 pt-5 mt-sm-0 mt-5'>
             <div data-aos="fade-up" className=' d-flex justify-content-center '>
               <h4 className=' mb-0 ff-Poppins fs-52 fw-bolder color_emphasis text-center line-62 mw_550 pt-4'>
                 OUR <span className=' fw-normal style_italic numbers'>NUMBERS</span> SAY ABOUT US
@@ -113,6 +116,9 @@ const Aboutus = () => {
         </div>
         <div className=' ellipse_4 d-lg-flex d-none'>
           <img src={Ellipse_4} alt="Ellipse_4" />
+        </div>
+        <div className='box_img'>
+          <img src={box_img} alt="box_img" className=' w-100' />
         </div>
       </section>
     </>

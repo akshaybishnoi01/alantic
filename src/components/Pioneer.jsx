@@ -15,7 +15,7 @@ const Pioneer = () => {
     return (
         <>
             <section id='services' className=' black_background position-relative overflow-hidden'>
-                <div className=' container1340 d-flex flex-column py-sm-5 mt-lg-5 mt-3 align-items-end '>
+                <div className=' container d-flex flex-column py-sm-5 mt-lg-5 mt-3 align-items-end '>
                     <h2 data-aos="fade-up" className=' mb-0 ff-Poppins fw-bolder color_emphasis fs-52 line-62 mw_745 mt-lg-5 mt-0 py-sm-5 pb-sm-0 pb-5'>
                         PIONEER OF  <span className=' mb-0 fw-normal style_italic highlight'>LUBRICANTS</span>  <span className=' d-inline-block'> & GREASE MANUFACTURING</span>
                     </h2>
@@ -39,11 +39,12 @@ const Pioneer = () => {
                                         READ OUR STORY
                                     </button>
                                 </div>
-                                <div className='white_bg'>
-                                    <img className="bg_frame_1" src={white_img} alt="white_img" />
-                                </div>
+
                             </div>
                         </div>
+                    </div>
+                    <div className='white_bg'>
+                        <img className="bg_frame_1" src={white_img} alt="white_img" />
                     </div>
                 </div>
 

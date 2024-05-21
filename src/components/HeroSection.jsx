@@ -73,7 +73,7 @@ const HeroSection = () => {
           </div>
         </div>
       </nav>
-      <div className=' container mw_1140 d-flex flex-grow-1 py-5 w-100'>
+      <div className=' container d-flex flex-grow-1 py-5 w-100'>
         <div className=' d-flex flex-wrap  justify-content-sm-between align-items-end  w-100  '>
           <div className="d-flex align-items-end justify-content-between w-100 flex-sm-nowrap flex-wrap">
             <h1 className=' mb-0 ff-Poppins fs-60 fw-bolder line-72 color_emphasis mw_790 mb-2  pb-sm-0 pb-5'>
