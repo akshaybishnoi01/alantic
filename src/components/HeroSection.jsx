@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
+import React, {useEffect , useState } from 'react'
 import logo from '../assets/image/logo.png'
 const HeroSection = () => {
-  const [data, setdata] = useState(false);
-  function view() {
-    setdata(!data)
-    if (data === false) {
-      document.body.classList.add("overflow_hidden");
+  const [nav, setnav] = useState(true)
+
+  useEffect(() => {
+    document.body.style.overflow = nav ? "visible" : "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
     }
-    else {
-      document.body.classList.remove("overflow_hidden");
-    }
-  }
+  }, [nav]);
   return (
     <header className=' header_img min-vh-100 d-flex flex-column overflow-hidden'>
       <nav className="nav_bar">
@@ -21,8 +20,10 @@ const HeroSection = () => {
                 <img src={logo} alt="logo" />
               </div>
 
-              <div className={`${data ? "navbarShow" : "navbarHide"} d-flex  align-items-center  gap-4 mobile_view `}>
-                <a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#aboutus">About Us</a>
+              <div className={`${nav ?  "navbarHide" : "navbarShow"} d-flex  align-items-center  gap-4 mobile_view `}>
+
+
+                <a onClick={() => setnav(!nav)} className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#aboutus">About Us</a>
                 <div class="dropdown">
                   <button class="dropbtn  mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75   text_gray text-center">
                     Categories <span class="ms-1"><svg width="15" height="9" viewBox="0 0 15 9" fill="none"
@@ -40,9 +41,9 @@ const HeroSection = () => {
                       Learn</a>
                   </div>
                 </div>
-                <a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#services">Services</a>
-                <a className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#testiomial">Testimonials</a>
-                <a className=' mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line' href="#blogs">Blogs</a>
+                <a onClick={() => setnav(!nav)} className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#services">Services</a>
+                <a onClick={() => setnav(!nav)} className=" mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line" href="#testiomial">Testimonials</a>
+                <a onClick={() => setnav(!nav)} className=' mb-0 ff-Sans fs-16 color_emphasis line-24 opacity-75 u_line' href="#blogs">Blogs</a>
 
               </div>
             </div>
@@ -63,7 +64,7 @@ const HeroSection = () => {
                   GET IN TOUCH
                 </button>
               </div>
-              <div onClick={view} className="menuicon d-flex flex-column gap-2 d-lg-none ms-md-3 ms-0">
+              <div onClick={() => setnav(!nav)} className="menuicon d-flex flex-column gap-2 d-lg-none ms-md-3 ms-0">
                 <span className='bar'></span>
                 <span className='bar'></span>
                 <span className='bar'></span>

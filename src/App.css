@@ -414,6 +414,9 @@
   .overflow_hidden {
     overflow: hidden;
   }
+  .overflow_hidden_none{
+    overflow:unset !important;
+  }
 
   .bar {
     width: 26px;

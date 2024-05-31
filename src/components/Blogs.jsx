@@ -5,7 +5,7 @@ const Blogs = () => {
     return (
         <>
             <section id='blogs' className=' black_background  position-relative'>
-                <div className=" container pb-5 mb-5">
+                <div className=" container pb-5 ">
                     <div data-aos="zoom-in" className=' d-flex justify-content-center pb-lg-5'>
                         <h5 className=' mb-0 ff-Poppins mt_-300 pt-5 fw-bolder fs-52 line-62 pb-lg-3 color_emphasis text-center'>
                             EXPLORE OUR <span className=' fw-normal style_italic blog'>BLOGS</span>
